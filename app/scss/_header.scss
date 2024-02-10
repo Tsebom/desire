@@ -1,0 +1,31 @@
+.header {
+	&__inner {
+		align-items: center;
+		padding-top: 46px;
+		padding-bottom: 43px;
+	}
+
+	&__btn {
+		@include no-btn();
+		cursor: pointer;
+	}
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+.menu {
+	padding-right: 15px;
+
+	&__list-item{
+		padding-right: 46px;
+		padding-left: 35px;
+	}
+
+	&__list-link {
+		@extend %montserrat-700;
+		color: rgb(146, 148, 148, 0.9);
+		line-height: 22px;
+	}
+}

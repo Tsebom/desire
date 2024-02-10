@@ -1,0 +1,36 @@
+:root {
+	--width-sandwich: 36px;
+	--width-long: 36px;
+	--width-shirt: 24px;
+	--color-line: #666666;
+}
+
+.sandwich {
+	width: var(--width-sandwich);
+}
+
+.sandwich:hover {
+	--width-long: 24px;
+	--width-shirt: 36px;
+	transition-duration: 0.5s;
+}
+
+.shirt-line {
+	margin: 0px 0px 5px auto;
+	width: var(--width-shirt);
+	border: 2px solid var(--color-line);
+	border-radius: 1px;
+	transition-duration: 0.5s;
+}
+
+.long-line {
+	margin: 0px 0px 5px auto;
+	width: var(--width-long);
+	border: 2px solid var(--color-line);
+	border-radius: 1px;
+	transition-duration: 0.5s;
+}
+
+.sandwich:last-child {
+	margin-bottom: 0px;
+}

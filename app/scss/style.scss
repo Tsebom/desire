@@ -2,3 +2,13 @@
 @import 'global/*.scss';
 @import '../components/**/*.scss';
 @import '**/_*.scss';
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@import '_header.scss';
+
+@import '_footer.scss';
