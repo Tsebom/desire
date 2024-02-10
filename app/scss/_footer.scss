@@ -75,6 +75,7 @@
 	}
 
 	&-btn {
+		@extend %opensans-400;
 		@include no-btn();
 		line-height: 28px;
 		color: #FFFFF0;
