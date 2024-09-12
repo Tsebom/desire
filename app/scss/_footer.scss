@@ -9,7 +9,8 @@
 	}
 
 		&__copyright {
-		@extend %opensans-400;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		text-align: center;
 		line-height: 28px;
 		color: #A1A1A1;
@@ -27,10 +28,12 @@
 	}
 
 	&-text {
-		@extend %opensans-400;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		color: #5A5A5A;
 		width: 476px;
 		margin-bottom: 16px;
+		
 	}
 
 	&-email {
@@ -65,17 +68,20 @@
 	}
 
 	&-email[type=text]::placeholder {
-		@extend %opensans-400;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		color: #A1A1A1;
 	}
 
 	&-email[type=text]::-moz-placeholder {
-		@extend %opensans-400;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		color: #A1A1A1;
 	}
 
 	&-btn {
-		@extend %opensans-400;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		@include no-btn();
 		line-height: 28px;
 		color: #FFFFF0;
@@ -95,10 +101,11 @@
 	margin-left: 99px;
 
 	&-item {
-		display: flex;
+		
 	}
 
 	&-img {
+		display: inline-block;
 		width: 16px;
 		height: 18px;
 		margin-top: 5px;
@@ -107,6 +114,7 @@
 
 	&-link {
 		@extend %opensans-600;
+		display: flex;
 		font-size: 14px;
 		color: #707070;
 	}

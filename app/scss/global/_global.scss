@@ -47,6 +47,7 @@ html,
 body {
 	height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 body {
@@ -57,7 +58,6 @@ body,
 ul,
 ol,
 li,
-p,
 h1,
 h2,
 h3,
@@ -97,7 +97,7 @@ a{
   text-decoration: none;
 }
 
-.wraper {
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -108,5 +108,14 @@ a{
 }
 
 .footer {
-	flex: 1 0 auto;
+	flex: 0 0 auto;
+}
+
+.title {
+	@extend %montserrat-700;
+	size: 36px;
+}
+
+.text {
+	@extend %opensans-400;
 }
