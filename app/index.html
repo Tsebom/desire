@@ -1,19 +1,167 @@
 <!DOCTYPE html>
-	@@include('components/page-blocks/_head.html', {
-		"lang": "en",
-		"title": "Disire",
-		"description": "description",
-		"keywords": "",
-		"favicon": "images/favicons/favicon"
-	})
+	<html lang="en">
+	<head>
+		@@include('components/page-blocks/_head.html', {
+			"title": "Desire",
+			"description": "description",
+			"keywords": "",
+			"favicon": "images/favicons/favicon"
+		})
+	</head>
 
 	<body>
 		<div class="wrapper">
 			@@include('components/page-blocks/_header.html', {
-				"logo": "images/logo.png"
+				"logo": "images/logo.png",
+				"about-active": "",
+				"galery-active": "",
+				"blog-active": "",
+				"contact-active": ""
 			})
 			<main class="main">
-
+				<section class="slider">
+					@@include('components/page-blocks/_slider.html')
+				</section>
+				<section class="collection main__container">
+					<div class="collection__info">
+						<h3 class="collection__title title">Furniture new collection</h3><!-- /.collection__title title -->
+						<p class="collection__text text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p><!-- /.collection__text text -->
+					</div>
+					@@include('components/page-blocks/_gallery-small.html', {
+						"src1": "images/content/gallery-small_main-page-1.webp",
+						"src2": "images/content/gallery-small_main-page-2.webp",
+						"src3": "images/content/gallery-small_main-page-3.webp",
+						"src4": "images/content/gallery-small_main-page-4.webp",
+						"src5": "images/content/gallery-small_main-page-5.webp",
+						"title1": "Truffaut literally trust",
+						"title2": "Truffaut literally trust",
+						"title3": "Truffaut literally trust",
+						"title4": "Truffaut literally trust",
+						"title5": "Truffaut literally trust",
+						"text1": "Living room furntiture | Chair",
+						"text2": "Living room furntiture | Chair",
+						"text3": "Living room furntiture | Chair",
+						"text4": "Living room furntiture | Chair",
+						"text5": "Living room furntiture | Chair"
+					})
+				</section>
+				<section class="aesthetic main__container">
+					<div class="aesthetic-blure">
+						<div class="container">
+							<div class="aesthetic__info">
+								<h3 class="aesthetic__title title">Aesthetic <br> ethical drinking</h3><!-- /.aesthetic__title -->
+								<p class="aesthetic__text text">Deep v you probably haven't heard of them banh mi synth actually affogato. <br> Artlyft ethical the one drinking vinegar austint</p>
+							</div>
+						</div>
+					</div>
+					<img class="aesthetic-img" src="images/content/aesthetic.jpg" alt="images">
+				</section>
+				<section class="work-path container">
+					<h3 class="work-path__title title">How it works</h3>
+					<div class="work-path__content">
+						<div class="work-path__content-item">
+							<div class="work-path__content-title flex --align-center">
+								<img class="work-path__content-img" src="images/sprite.svg#sprite--consultation" alt="">
+								<h3 class="title">Designer Consultation</h3>
+							</div>
+							<p class="work-path__content-text text">
+								Kinfolk scenester authentic craft beer truffaut irony intelligentsia
+								YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+							</p>
+						</div>
+						<div class="work-path__content-item">
+							<div class="work-path__content-title flex --align-center">
+								<img class="work-path__content-img" src="images/sprite.svg#sprite--production" alt="">
+								<h3 class="title">Production</h3>
+							</div>
+							<p class="work-path__content-text text">
+								Everyday carry actually neutra authentic kogi shabby chic
+							</p>
+						</div>
+						<div class="work-path__content-item">
+							<div class="work-path__content-title flex --align-center">
+								<img class="work-path__content-img" src="images/sprite.svg#sprite--measurements" alt="">
+								<h3 class="title">Measurements</h3>
+							</div>
+							<p class="work-path__content-text text">
+								Intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="main-gallery flex --dir-col --just-center main__container">
+					<div class="main-gallery__tabs container">
+						@@include('components/bem-blocks/_tabs.html')
+					</div>
+					<div class="main-gallery__imgs">
+						@@include('components/bem-blocks/_gallery.html', {
+							"id": "badroom",
+							"src1": "images/content/gallery_main-page-1.webp",
+							"src2": "images/content/gallery_main-page-2.webp",
+							"src3": "images/content/gallery_main-page-3.webp",
+							"src4": "images/content/gallery_main-page-4.webp",
+							"src5": "images/content/gallery_main-page-5.webp",
+							"active": "gallery--active",
+							"revers": ""
+						})
+						@@include('components/bem-blocks/_gallery.html', {
+							"id": "living_room",
+							"src1": "images/content/gallery_main-page-1.webp",
+							"src2": "images/content/gallery_main-page-2.webp",
+							"src3": "images/content/gallery_main-page-3.webp",
+							"src4": "images/content/gallery_main-page-4.webp",
+							"src5": "images/content/gallery_main-page-5.webp",
+							"active": "",
+							"revers": "--revers"
+						})
+						@@include('components/bem-blocks/_gallery.html', {
+							"id": "office",
+							"src1": "images/content/gallery_main-page-1.webp",
+							"src2": "images/content/gallery_main-page-2.webp",
+							"src3": "images/content/gallery_main-page-3.webp",
+							"src4": "images/content/gallery_main-page-4.webp",
+							"src5": "images/content/gallery_main-page-5.webp",
+							"active": "",
+							"revers": ""
+						})
+						@@include('components/bem-blocks/_gallery.html', {
+							"id": "dining_room",
+							"src1": "images/content/gallery_main-page-1.webp",
+							"src2": "images/content/gallery_main-page-2.webp",
+							"src3": "images/content/gallery_main-page-3.webp",
+							"src4": "images/content/gallery_main-page-4.webp",
+							"src5": "images/content/gallery_main-page-5.webp",
+							"active": "",
+							"revers": "--revers"
+						})
+						@@include('components/bem-blocks/_gallery.html', {
+							"id": "chair",
+							"src1": "images/content/gallery_main-page-1.webp",
+							"src2": "images/content/gallery_main-page-2.webp",
+							"src3": "images/content/gallery_main-page-3.webp",
+							"src4": "images/content/gallery_main-page-4.webp",
+							"src5": "images/content/gallery_main-page-5.webp",
+							"active": "",
+							"revers": ""
+						})
+					</div>
+				</section>
+				<section class="small-blogs container">
+					<h3 class="small-blogs__title title">More inspiration ideas in our blog</h3>
+					<div class="small-blogs__content flex --just-space">
+						@@include('components/bem-blocks/_blogpost-small.html', {
+							"src": "images/content/blog_main-page-1.webp",
+							"info": "March 12, 2020 | by Ann Summers | Interior ",
+							"title": "Listicle actually selvage activated charcoal for the drinking vinegar"
+						})
+						@@include('components/bem-blocks/_blogpost-small.html', {
+							"src": "images/content/blog_main-page-2.webp",
+							"info": "September 28,2020 | by Finnagan Morningstar | Dining room interior",
+							"title": "Red selfies edison bulb four dollar toast humblebrag"
+						})
+					</div>
+				</section>
+				
 			</main>
 			@@include('components/page-blocks/_footer.html')
 		</div>

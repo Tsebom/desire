@@ -6,12 +6,10 @@ const sprite = require('gulp-svg-sprite')
 module.exports = function svg_sprite() {
 	return src('app/svg/**/*.svg')
 		.pipe(svgmin({
-			plugins: [{
-					removeComments: true
-				},
-				{
-					removeEmptyContainers: true
-				}
+			plugins: [
+					"removeComments",
+					"removeEmptyContainers",
+					"removeMetadata"
 			]
 		}))
 		.pipe(sprite({

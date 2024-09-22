@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		@@include('components/page-blocks/_head.html', {
+			"title": "Desire",
+			"description": "description",
+			"keywords": "",
+			"favicon": "images/favicons/favicon"
+		})
+	</head>
+
+	<body>
+		<div class="wrapper">
+			@@include('components/page-blocks/_header.html', {
+				"logo": "images/logo.png",
+				"about-active": "",
+				"galery-active": "",
+				"blog-active": "",
+				"contact-active": "menu__list-link--active"
+			})
+			<main class="main">
+				<section class="main_container">
+					@@include('components/page-blocks/_breadcrumbs.html', {
+						"path1": "contact.html",
+						"page1": "Contact",
+						"path2": "",
+						"page2": ""
+					})
+				</section>
+			</main>
+			@@include('components/page-blocks/_footer.html')
+		</div>
+	</body>
+	@@include('components/page-blocks/_scripts.html')
+</html>

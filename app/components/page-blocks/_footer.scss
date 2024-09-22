@@ -1,0 +1,100 @@
+.footer {
+	&__content {
+		background-color: $background-footer;
+	}
+
+	&__inner {
+		padding-top: 61px;
+		padding-bottom: 80px;
+	}
+
+		&__copyright {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		text-align: center;
+		line-height: 28px;
+		color: $copyright;
+		background-color: $title;
+		padding: 42px 0px;
+	}
+}
+
+.footer__contacts {
+	&-title {
+		@extend %montserrat-700;
+		color: $title;
+		line-height: 23px;
+		margin-bottom: 14px;
+	}
+
+	&-text {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: $text;
+		width: 476px;
+		margin-bottom: 16px;
+		
+	}
+
+	&-email {
+		margin-bottom: 22px;
+	}
+
+	&-icon {
+		margin-top: 6px;
+		margin-right: 14px;
+		width: 16px;
+		height: 16px;
+	}
+
+	&-link {
+		@extend %opensans-600;
+		line-height: 28px;
+		font-size: 14px;
+		color: $title;
+	}
+}
+
+.footer__social-item + .footer__social-item,
+.footer__menu-item + .footer__menu-item {
+	margin-top: 15px;
+}
+
+.footer__social {
+	margin-left: 99px;
+
+	&-item {
+		
+	}
+
+	&-img {
+		display: inline-block;
+		width: 16px;
+		height: 18px;
+		margin-top: 5px;
+		margin-right: 14px;
+	}
+
+	&-link {
+		@extend %opensans-600;
+		display: flex;
+		font-size: 14px;
+		color: $social-link;
+	}
+}
+
+.footer__menu {
+	margin-left: 176px;
+
+	&-link {
+		@extend %opensans-600;
+		font-size: 14px;
+		line-height: 28px;
+		color: $social-link;
+	}
+}
+
+
+
+
+

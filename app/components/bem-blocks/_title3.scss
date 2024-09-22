@@ -1,0 +1,19 @@
+.title3 {
+	max-width: 822px;
+	&__title {
+		position: relative;
+		font-size: 36px;
+		line-height: 60px;
+		padding-bottom: 16px;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 1px;
+			background-color: $title-line-color;
+			max-width: 200px;
+		}
+	}
+}

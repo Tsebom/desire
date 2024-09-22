@@ -40,7 +40,7 @@
 
 html {
 	font-size: 16px;
-	line-height: 27px;
+	line-height: 28px;
 }
 
 html,
@@ -48,6 +48,7 @@ body {
 	height: 100%;
 	position: relative;
 	overflow-x: hidden;
+	color: $text;
 }
 
 body {
@@ -113,9 +114,10 @@ a{
 
 .title {
 	@extend %montserrat-700;
-	size: 36px;
+	color: $title;
 }
 
 .text {
 	@extend %opensans-400;
+	color: $text;
 }

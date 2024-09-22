@@ -1,0 +1,39 @@
+.gallery-small {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 29.5px;
+	padding-top: 27px;
+	padding-bottom: 104px;
+
+	&__item {
+		position: relative;
+	}
+
+	&__hover {
+		display: none;
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgb(255, 255, 255, .6);
+
+		&-title {
+			font-size: 20px;
+			margin-top: 130px;
+			&::after {
+				content: '';
+				display: block;
+				width: 202px;
+				border-bottom: 1px solid #979797;
+				padding-bottom: 19px;
+				margin: 0 auto;
+			}
+		}
+
+		&-text {
+			font-size: 14px;
+		}
+	}
+}

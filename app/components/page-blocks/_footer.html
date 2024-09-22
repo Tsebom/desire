@@ -11,8 +11,11 @@
 					</div>
 					<div class="footer__subscribe">
 						<form class="footer__subscribe-form">
-							<input class="footer__subscribe-email" type="text" placeholder="Subscribe by email">
-							<button class="footer__subscribe-btn">Send</button>
+							@@include('../bem-blocks/_form.html', {
+								"id": "subscribe",
+								"placeholder": "Subscribe by email"
+							})
+							@@include('../bem-blocks/_btn-dark.html', {"button": "Send"})
 						</form>
 					</div>
 				</div>

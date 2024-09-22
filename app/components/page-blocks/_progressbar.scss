@@ -1,0 +1,16 @@
+.progressbar {
+	max-width: 824px;
+	background-color: $copyright;
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 14px;
+	}
+	
+	&__progress {
+		height: 2px;
+		margin-bottom: 33px;
+		
+	}
+}

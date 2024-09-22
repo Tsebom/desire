@@ -1,0 +1,39 @@
+.sidebar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	max-width: 694px;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 41px;
+	box-shadow: -2px 3px 17px 0px rgba(34, 60, 80, 0.2);
+	transition: all 1.0s;
+	z-index: 11;
+
+	&.sidebar__hide {
+		transform: translateX(150%)
+	}
+
+	&_close {
+		@include no-btn();
+		margin-left: 47px;
+	}
+
+	&_close-img {
+		width: 26px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		max-width: 483px;
+		margin: 0 auto;
+	}
+
+	&-img {
+		padding-top: 75px;
+		max-width: 483px;
+	}
+}

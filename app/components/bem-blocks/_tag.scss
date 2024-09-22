@@ -1,0 +1,18 @@
+.tag {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	@include no-btn();
+	line-height: 28px;
+	color: $color-tag;
+	padding: 0 14px;
+	border: 1px solid $border-tag;
+	border-radius: 21px;
+	background: $background-tag;
+
+	&-active {
+		background: $background-tag-active;
+		color: $title;
+		border: 1px solid $background-tag-active;
+	}
+}

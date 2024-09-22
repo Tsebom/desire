@@ -1,5 +1,6 @@
 @import 'base/*.scss';
-@import 'global/*.scss';
+@import 'global/_var.scss';
+@import 'global/_global.scss';
 @import '../components/**/*.scss';
 @import '**/_*.scss';
 
@@ -9,3 +10,166 @@
 	padding: 0 15px;
 }
 
+.main__container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.collection {
+	padding: 0px 26px;
+
+	&__info {
+		max-width: 730px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 36px;
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 25px;
+			width: 252px;
+			border-bottom: 1px solid $title-line-color;
+			margin: 0 auto;
+		}
+	}
+}
+
+.aesthetic {
+	position: relative;
+	margin-bottom: 79px;
+	
+	&-blure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgb(255, 255, 255, .8);
+	}
+
+	&__info {
+		max-width: 731px;
+	}
+
+	&__title {
+		font-size: 60px;
+		line-height: 80px;
+		margin-top: 172px;
+		&::after {
+			content: '';
+			display: block;
+			width: 200px;
+			border-bottom: 1px solid $title-line-color;
+			padding-bottom: 22px;
+		}
+	}
+
+	&__text {
+		margin-top: 21px;
+	}
+}
+
+.work-path {
+	position: relative;
+	padding-bottom: 108px;
+	
+
+	&__title {
+		font-size: 36px;
+		line-height: 51px;
+		text-align: center;
+	}
+
+	&__content {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		
+		&-item {
+			
+			&:nth-child(1) {
+				padding-right: 317px;
+				&::after {
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 2px;
+					background-color: $title;
+				}
+			}
+
+			&:nth-child(2) {
+				position: relative;
+				&::before {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					content: '';
+					width: 2px;
+					height: 20px;
+					background-color: $title;
+				}
+			}
+
+			&:nth-child(3) {
+				padding-left: 306px;
+				border-bottom: none;
+				position: relative;
+				&::before {
+					position: absolute;
+					left: 0;
+					top:-5px;
+					content: '';
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background-color: $title;
+				}
+				&::after {
+					position: absolute;
+					left: 306px;
+					top: 0;
+					content: '';
+					width: 2px;
+					height: 20px;
+					background-color: $title;
+				}
+			}
+		}
+
+		&-title {
+			padding-top: 39px;
+			gap: 10px;
+		}
+
+		&-img {
+			width: 42px;
+		}
+
+		&-text {
+			max-width: 247px;
+		}
+	}
+}
+
+.main-gallery {
+	margin-bottom: 88px;
+	padding: 0 26px;
+	&__tabs {
+		margin-bottom: 40px;
+	}
+}
+
+.small-blogs {
+	text-align: center;
+	&__title {
+		max-width: 430px;
+		font-size: 36px;
+		line-height: 51px;
+		margin: 0 auto;
+		margin-bottom: 29px;
+	}
+}

@@ -4,28 +4,28 @@
 			<nav class="menu">
 				<ul class="menu__list flex">
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">About</a>
+						<a class="menu__list-link @@about-active" href="about.html">About</a>
 					</li>
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">Gallery</a>
+						<a class="menu__list-link @@galery-active" href="gallery.html">Gallery</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="logo" href="#">
+			<a class="logo" href="/">
 				<img src="@@logo" alt="DISIRE COMPANY">
 			</a>
 			<nav class="menu">
 				<ul class="menu__list flex">
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">Blog</a>
+						<a class="menu__list-link @@blog-active" href="blog.html">Blog</a>
 					</li>
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">Contact</a>
+						<a class="menu__list-link @@contact-active" href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 			<button class="header__btn">
-				@@include('_sandwich.html')
+				@@include('../bem-blocks/_sandwich.html')
 			</button>
 			@@include('_rightside_bar.html', {
 				"logo": "images/big-logo.png"

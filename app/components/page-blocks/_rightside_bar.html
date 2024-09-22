@@ -1,24 +1,18 @@
 <div class="sidebar sidebar__hide">
 	<button class="sidebar_close">
 		<img class="sidebar_close-img" src="images/sprite.svg#sprite--sidebar_close" alt="close">
-	</button><!-- /.sidebar_close -->
+	</button>
 	<div class="sidebar__content">
 		<div class="sidebar__logo">
 			<a class="sidebar__logo-link" href="#">
 				<img src="@@logo" alt="DISIRE COMPANY">
 			</a>
-		</div><!-- /.logo -->
-		<div class="sidebar__title">
-			<h1 class="title">Furniture for life</h1><!-- /.title -->			
-		</div><!-- /.sidebar__title -->
-		<div class="sidebar__line"></div><!-- /.sidebar__line -->
-		<p class="sidebar__text text">
-			Sustainable hot chicken skateboard,
-			dreamcatcher meggings actually squid.
-			Slow-carb everyday carry +1 art party microdosing,
-			put a bird on it brooklyn
-		</p><!-- /.text -->
-		<img class="sidebar-img" src="images/sidebar_img.jpg" alt="images">
-	</div><!-- /.sidebar__content -->
-
-</div><!-- /.sidebar -->
+		</div>
+		@@include('../bem-blocks/_title1.html', {
+			"title": "Furniture for life",
+			"text": "Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn"
+		})
+		<img class="sidebar-img" src="images/content/sidebar_img.jpg" alt="images">
+		<div class="sidebar__bottom"></div>
+	</div>
+</div>

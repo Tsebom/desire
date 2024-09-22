@@ -1,0 +1,61 @@
+:root {
+	--swiper-pagination-progressbar-size: 8px;
+	--swiper-pagination-bullet-horizontal-gap: 15px;
+	--swiper-pagination-bottom: 87px;
+}
+
+.swiper {
+	background-image: url('../images/slider_background.jpg');
+	background-repeat: no-repeat;
+	padding-bottom: 87px;
+
+	&-pagination {
+		text-align: none;
+		&-bullet {
+			background-color: $title;
+			opacity: 1;
+			&-active {
+				background-color: #FFEF35;
+			}
+		}
+	}
+}
+
+.slider {
+
+	&__content {
+		display: flex;
+		gap: 20px;
+		padding-left: 170px;
+	}
+
+	&__info {
+		max-width: 635px;
+		padding-top: 174px;
+	}
+	
+	&__title {
+		@extend %montserrat-700;
+		position: relative;
+		font-size: 110px;
+		line-height: 135px;
+		color: $title;
+		padding-bottom: 26px;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			background-color: #6D7278;
+			width: 185px;
+		}
+	}
+
+	&__text {
+		margin-top: 26px;
+	}
+}
+
+
+
